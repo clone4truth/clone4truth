@@ -1,120 +1,177 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="410" viewBox="0 0 980 410" role="img" aria-label="Animated Linux terminal profile">
-  <rect width="980" height="410" rx="16" fill="#0d1117"/>
-  <rect x="1" y="1" width="978" height="408" rx="15" fill="none" stroke="#30363d"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-label="Animated operator terminal for clone4truth">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-  <circle cx="28" cy="25" r="6" fill="#ff5f56"/>
-  <circle cx="48" cy="25" r="6" fill="#ffbd2e"/>
-  <circle cx="68" cy="25" r="6" fill="#27c93f"/>
-  <text x="490" y="30" text-anchor="middle" fill="#8b949e" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="14">clone4truth@redteam:~</text>
-  <line x1="0" y1="48" x2="980" y2="48" stroke="#21262d"/>
+  <rect width="1100" height="500" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1098" height="498" rx="17" fill="none" stroke="#30363d"/>
+  <rect x="0" y="0" width="1100" height="48" rx="18" fill="url(#header)"/>
+  <rect x="0" y="30" width="1100" height="18" fill="url(#header)"/>
+  <circle cx="30" cy="24" r="6" fill="#ff5f56"/>
+  <circle cx="50" cy="24" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="24" r="6" fill="#27c93f"/>
+  <text x="550" y="30" text-anchor="middle" fill="#8b949e" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="14">operator-console :: clone4truth@redteam:~/engagement</text>
+  <line x1="0" y1="48" x2="1100" y2="48" stroke="#21262d"/>
+
+  <circle cx="1038" cy="24" r="5" fill="#22c55e" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1052" y="29" fill="#22c55e" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="12">LIVE</text>
 
   <style>
-    text { font-family: JetBrains Mono, Fira Code, Consolas, monospace; font-size: 20px; }
-    .prompt { fill: #ff5c5c; font-weight: 700; }
-    .cmd { fill: #f0f6fc; }
-    .out { fill: #8b949e; }
-    .accent { fill: #7ee787; }
+    text { font-family: JetBrains Mono, Fira Code, Consolas, monospace; }
+    .prompt-top { fill: #7c3aed; font-size: 19px; font-weight: 700; }
+    .prompt { fill: #ff5c5c; font-size: 20px; font-weight: 700; }
+    .cmd { fill: #f0f6fc; font-size: 20px; }
+    .out { fill: #9fb0c3; font-size: 20px; }
+    .accent { fill: #7ee787; font-size: 20px; }
+    .cyan { fill: #79c0ff; font-size: 20px; }
+    .muted { fill: #6e7681; font-size: 20px; }
+    .scan { opacity: .08; }
 
-    .terminal-content { animation: content-cycle 16s linear infinite; }
+    .content { animation: content-cycle 18s linear infinite; }
     .line { opacity: 0; }
+    .l0 { animation: l0 18s linear infinite; }
+    .l1 { animation: l1 18s linear infinite; }
+    .l2 { animation: l2 18s linear infinite; }
+    .l3 { animation: l3 18s linear infinite; }
+    .l4 { animation: l4 18s linear infinite; }
+    .l5 { animation: l5 18s linear infinite; }
+    .l6 { animation: l6 18s linear infinite; }
+    .l7 { animation: l7 18s linear infinite; }
+    .l8 { animation: l8 18s linear infinite; }
+    .l9 { animation: l9 18s linear infinite; }
+    .l10 { animation: l10 18s linear infinite; }
 
-    .l1 { animation: l1 16s linear infinite; }
-    .l2 { animation: l2 16s linear infinite; }
-    .l3 { animation: l3 16s linear infinite; }
-    .l4 { animation: l4 16s linear infinite; }
-    .l5 { animation: l5 16s linear infinite; }
-    .l6 { animation: l6 16s linear infinite; }
-    .l7 { animation: l7 16s linear infinite; }
-    .l8 { animation: l8 16s linear infinite; }
+    .clear-prompt { opacity: 0; animation: clearPrompt 18s linear infinite; }
+    .clear-c1 { opacity: 0; animation: c1 18s linear infinite; }
+    .clear-c2 { opacity: 0; animation: c2 18s linear infinite; }
+    .clear-c3 { opacity: 0; animation: c3 18s linear infinite; }
+    .clear-c4 { opacity: 0; animation: c4 18s linear infinite; }
+    .clear-c5 { opacity: 0; animation: c5 18s linear infinite; }
 
-    .clear-prompt { opacity: 0; animation: clear-prompt 16s linear infinite; }
-    .clear-c1 { opacity: 0; animation: clear-c1 16s linear infinite; }
-    .clear-c2 { opacity: 0; animation: clear-c2 16s linear infinite; }
-    .clear-c3 { opacity: 0; animation: clear-c3 16s linear infinite; }
-    .clear-c4 { opacity: 0; animation: clear-c4 16s linear infinite; }
-    .clear-c5 { opacity: 0; animation: clear-c5 16s linear infinite; }
-
-    .cursor-main { animation: cursor-main 16s steps(1,end) infinite; }
-    .cursor-clear { opacity: 0; animation: cursor-clear 16s steps(1,end) infinite; }
+    .cursor-main { animation: cursorMain 18s steps(1,end) infinite; }
+    .cursor-clear { opacity: 0; animation: cursorClear 18s steps(1,end) infinite; }
 
     @keyframes content-cycle {
       0%, 92% { opacity: 1; }
       93%, 100% { opacity: 0; }
     }
 
-    @keyframes l1 { 0%, 3% { opacity:0 } 5%, 92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l2 { 0%, 9% { opacity:0 } 11%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l3 { 0%,18% { opacity:0 } 20%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l4 { 0%,25% { opacity:0 } 27%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l5 { 0%,37% { opacity:0 } 39%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l6 { 0%,44% { opacity:0 } 46%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l7 { 0%,58% { opacity:0 } 60%,92% { opacity:1 } 93%,100% { opacity:0 } }
-    @keyframes l8 { 0%,66% { opacity:0 } 68%,92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l0 { 0%, 1% { opacity:0 } 2%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l1 { 0%, 5% { opacity:0 } 6%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l2 { 0%, 12% { opacity:0 } 13%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l3 { 0%, 18% { opacity:0 } 19%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l4 { 0%, 27% { opacity:0 } 28%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l5 { 0%, 34% { opacity:0 } 35%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l6 { 0%, 45% { opacity:0 } 46%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l7 { 0%, 52% { opacity:0 } 53%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l8 { 0%, 63% { opacity:0 } 64%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l9 { 0%, 70% { opacity:0 } 71%, 92% { opacity:1 } 93%,100% { opacity:0 } }
+    @keyframes l10 { 0%, 78% { opacity:0 } 79%, 92% { opacity:1 } 93%,100% { opacity:0 } }
 
-    @keyframes clear-prompt { 0%,76% {opacity:0} 77%,92% {opacity:1} 93%,100% {opacity:0} }
-    @keyframes clear-c1 { 0%,78% {opacity:0} 79%,92% {opacity:1} 93%,100% {opacity:0} }
-    @keyframes clear-c2 { 0%,80% {opacity:0} 81%,92% {opacity:1} 93%,100% {opacity:0} }
-    @keyframes clear-c3 { 0%,82% {opacity:0} 83%,92% {opacity:1} 93%,100% {opacity:0} }
-    @keyframes clear-c4 { 0%,84% {opacity:0} 85%,92% {opacity:1} 93%,100% {opacity:0} }
-    @keyframes clear-c5 { 0%,86% {opacity:0} 87%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes clearPrompt { 0%,82% {opacity:0} 83%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes c1 { 0%,84% {opacity:0} 85%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes c2 { 0%,85% {opacity:0} 86%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes c3 { 0%,86% {opacity:0} 87%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes c4 { 0%,87% {opacity:0} 88%,92% {opacity:1} 93%,100% {opacity:0} }
+    @keyframes c5 { 0%,88% {opacity:0} 89%,92% {opacity:1} 93%,100% {opacity:0} }
 
-    @keyframes cursor-main {
-      0%,2%,4%,6%,8%,10%,12%,14%,16%,18%,20%,22%,24%,26%,28%,30%,32%,34%,36%,38%,40%,42%,44%,46%,48%,50%,52%,54%,56%,58%,60%,62%,64%,66%,68%,70%,72%,74%,76% { opacity:1; }
-      1%,3%,5%,7%,9%,11%,13%,15%,17%,19%,21%,23%,25%,27%,29%,31%,33%,35%,37%,39%,41%,43%,45%,47%,49%,51%,53%,55%,57%,59%,61%,63%,65%,67%,69%,71%,73%,75%,77%,100% { opacity:0; }
+    @keyframes cursorMain {
+      0%, 80% { opacity: 1; }
+      81%, 100% { opacity: 0; }
     }
 
-    @keyframes cursor-clear {
-      0%,78% { opacity:0; transform:translateX(0); }
-      79%,80% { opacity:1; transform:translateX(12px); }
-      81%,82% { opacity:1; transform:translateX(24px); }
-      83%,84% { opacity:1; transform:translateX(36px); }
-      85%,86% { opacity:1; transform:translateX(48px); }
-      87%,89% { opacity:1; transform:translateX(60px); }
-      90% { opacity:0; transform:translateX(60px); }
-      91%,92% { opacity:1; transform:translateX(60px); }
-      93%,100% { opacity:0; transform:translateX(60px); }
+    @keyframes cursorClear {
+      0%,84% { opacity:0; transform:translateX(0px); }
+      85%,85.8% { opacity:1; transform:translateX(14px); }
+      86%,86.8% { opacity:1; transform:translateX(28px); }
+      87%,87.8% { opacity:1; transform:translateX(42px); }
+      88%,88.8% { opacity:1; transform:translateX(56px); }
+      89%,90.8% { opacity:1; transform:translateX(70px); }
+      91%,91.8% { opacity:0; transform:translateX(70px); }
+      92% { opacity:1; transform:translateX(70px); }
+      93%,100% { opacity:0; transform:translateX(70px); }
     }
   </style>
 
-  <g class="terminal-content">
+  <g class="scan">
+    <rect x="0" y="70" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="122" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="174" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="226" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="278" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="330" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="382" width="1100" height="1" fill="#ffffff"/>
+    <rect x="0" y="434" width="1100" height="1" fill="#ffffff"/>
+  </g>
+
+  <g class="content">
+    <g class="line l0">
+      <text x="24" y="84" class="prompt-top">┌──(clone4truth㉿redteam)-[~/engagement]</text>
+    </g>
+
     <g class="line l1">
-      <text x="28" y="86"><tspan class="prompt">$</tspan><tspan class="cmd"> whoami</tspan></text>
+      <text x="24" y="120"><tspan class="prompt">└─$</tspan><tspan class="cmd"> whoami</tspan></text>
     </g>
     <g class="line l2">
-      <text x="28" y="116" class="accent">C4T / clone4truth</text>
+      <text x="72" y="152" class="accent">C4T / clone4truth</text>
     </g>
 
     <g class="line l3">
-      <text x="28" y="158"><tspan class="prompt">$</tspan><tspan class="cmd"> cat mission.txt</tspan></text>
+      <text x="24" y="196"><tspan class="prompt">└─$</tspan><tspan class="cmd"> cat role.txt</tspan></text>
     </g>
     <g class="line l4">
-      <text x="28" y="188" class="out">Break assumptions. Test defenses. Build better systems.</text>
+      <text x="72" y="228" class="out">Web Developer | IoT Builder | Security &amp; Automation</text>
     </g>
 
     <g class="line l5">
-      <text x="28" y="230"><tspan class="prompt">$</tspan><tspan class="cmd"> cat scope.txt</tspan></text>
+      <text x="24" y="272"><tspan class="prompt">└─$</tspan><tspan class="cmd"> cat focus.txt</tspan></text>
     </g>
     <g class="line l6">
-      <text x="28" y="260" class="out">Red Teaming | Web &amp; API Security | Adversary Emulation | Security Automation</text>
+      <text x="72" y="304" class="cyan">Web &amp; API Security | Embedded Systems | Realtime Infrastructure</text>
     </g>
 
     <g class="line l7">
-      <text x="28" y="302"><tspan class="prompt">$</tspan><tspan class="cmd"> echo $ENGAGEMENT_MODE</tspan></text>
+      <text x="24" y="348"><tspan class="prompt">└─$</tspan><tspan class="cmd"> ls stack/</tspan></text>
     </g>
     <g class="line l8">
-      <text x="28" y="332" class="accent">authorized-research / lab / CTF</text>
+      <text x="72" y="380" class="accent">nextjs   go   laravel   python   esp32   docker   linux</text>
     </g>
 
-    <rect class="cursor-main" x="365" y="314" width="10" height="20" fill="#f0f6fc" rx="1"/>
+    <g class="line l9">
+      <text x="24" y="424"><tspan class="prompt">└─$</tspan><tspan class="cmd"> echo $ENGAGEMENT_MODE</tspan></text>
+    </g>
+    <g class="line l10">
+      <text x="72" y="456" class="muted">authorized-research / lab / CTF</text>
+    </g>
+
+    <rect class="cursor-main" x="438" y="440" width="10" height="20" fill="#f0f6fc" rx="1">
+      <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   <g aria-label="clear command">
-    <text x="28" y="378" class="prompt clear-prompt">$</text>
-    <text x="45" y="378" class="cmd clear-c1">c</text>
-    <text x="57" y="378" class="cmd clear-c2">l</text>
-    <text x="69" y="378" class="cmd clear-c3">e</text>
-    <text x="81" y="378" class="cmd clear-c4">a</text>
-    <text x="93" y="378" class="cmd clear-c5">r</text>
-    <rect class="cursor-clear" x="105" y="360" width="10" height="20" fill="#f0f6fc" rx="1"/>
+    <text x="24" y="486" class="prompt clear-prompt">└─$</text>
+    <text x="74" y="486" class="cmd clear-c1">c</text>
+    <text x="88" y="486" class="cmd clear-c2">l</text>
+    <text x="102" y="486" class="cmd clear-c3">e</text>
+    <text x="116" y="486" class="cmd clear-c4">a</text>
+    <text x="130" y="486" class="cmd clear-c5">r</text>
+    <rect class="cursor-clear" x="145" y="470" width="10" height="20" fill="#f0f6fc" rx="1"/>
   </g>
 </svg>
