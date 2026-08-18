@@ -2,105 +2,123 @@
 
 # C4T
 
-### Web Developer · IoT Developer · Security & Automation
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2400&pause=900&color=FF4D4D&center=true&vCenter=true&width=760&lines=Red+Team+%26+Offensive+Security;Adversary+Emulation+%26+Security+Research;Web+%2F+API+Security+%26+Automation" alt="Red Team typing banner" />
 
-Building practical systems across **web applications, connected devices, realtime infrastructure, and security tooling**.
+**Red Team · Offensive Security · Adversary Emulation · Security Automation**
 
-`Systems` · `Embedded` · `Automation` · `Security`
+`clone4truth`
 
 </div>
 
 ---
 
-## About
+```console
+$ whoami
+C4T / clone4truth
 
-I build software across the full path from **device to interface** — from ESP32-based hardware and IoT gateways to backend services, realtime communication, data infrastructure, and modern web applications.
+$ cat mission.txt
+Break assumptions. Test defenses. Build better systems.
 
-- **Web & Backend** — Next.js, React, TypeScript, Laravel, PHP, Go, REST APIs, and realtime systems.
-- **IoT & Embedded** — ESP32, sensors & actuators, MQTT, LoRa, gateways, device telemetry, and automation.
-- **Data & Infrastructure** — PostgreSQL, Redis, Docker, Linux, CI/CD, and service-oriented architectures.
-- **Security & AI** — security tooling, authorized testing workflows, AI agents, MCP integrations, and automation.
+$ cat scope.txt
+Red Teaming | Web & API Security | Adversary Emulation | Security Automation
 
-## Engineering Focus
+$ echo $ENGAGEMENT_MODE
+authorized-research / lab / CTF
+```
+
+## Offensive Security Focus
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-### Web & Backend
+### Attack Surface
 
-- Next.js / React
-- TypeScript
-- Laravel / PHP
-- Go services & APIs
-- WebSocket / realtime
-
-</td>
-<td width="33%" valign="top">
-
-### IoT & Systems
-
-- ESP32
-- MQTT / LoRa
-- Device gateways
-- Sensor telemetry
-- Embedded automation
+- Reconnaissance
+- Asset discovery
+- Service enumeration
+- Attack surface mapping
+- OSINT workflows
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-### Security & Automation
+### Web & API
+
+- Web security testing
+- API assessment
+- Authentication flows
+- Authorization testing
+- Business logic review
+
+</td>
+<td width="25%" valign="top">
+
+### Adversary Emulation
+
+- Internal security labs
+- Active Directory labs
+- Network pivoting labs
+- Detection-aware testing
+- Tradecraft research
+
+</td>
+<td width="25%" valign="top">
+
+### Automation
 
 - Security tooling
-- CI/CD workflows
-- AI agent systems
-- MCP integrations
-- Infrastructure automation
+- Workflow automation
+- AI-assisted research
+- Agentic security systems
+- CI/CD security tasks
 
 </td>
 </tr>
 </table>
 
-## Core Stack
+## Toolchain
+
+**Recon & Discovery**  
+`Nmap` · `Nuclei` · `httpx` · `Subfinder` · `ffuf` · `Amass`
+
+**Web / API Assessment**  
+`Burp Suite` · `OWASP ZAP` · `sqlmap` · `mitmproxy` · `Insomnia`
+
+**Internal / AD Labs**  
+`BloodHound` · `Impacket` · `NetExec` · `Responder` · `CrackMapExec`
+
+**Traffic / Analysis**  
+`Wireshark` · `tcpdump` · `Ghidra` · `CyberChef`
+
+**Engineering & Automation**  
+`Python` · `Go` · `Bash` · `TypeScript` · `Docker` · `Linux` · `GitHub Actions`
 
 <div align="center">
 
-[![Core Stack](https://skillicons.dev/icons?i=go,ts,nextjs,react,laravel,php,python,rust,postgres,redis,docker,linux,git,github&perline=7)](https://skillicons.dev)
+[![Core Stack](https://skillicons.dev/icons?i=python,go,bash,ts,docker,linux,git,github,vscode&perline=9)](https://skillicons.dev)
 
 </div>
 
-## How I Like to Build
+## Research Themes
 
-```text
-Device / Sensor
-      │
-      ├── LoRa / Wi-Fi
-      ▼
-Gateway / Edge
-      │
-      ├── MQTT / HTTP / WebSocket
-      ▼
-Backend Services
-  Go · Laravel · Python
-      │
-      ├── PostgreSQL · Redis
-      ▼
-Realtime API / Automation
-      │
-      ▼
-Next.js / React Interface
-```
+- Offensive-security tooling and automation
+- Adversary-emulation workflows for controlled environments
+- AI agents for authorized security assessment
+- Network, protocol, and traffic analysis
+- CTF, forensic, and exploit-research labs
 
-I prefer systems that are **observable, modular, automation-friendly, and easy to operate** — whether they run on a microcontroller, a gateway, or a production server.
+> [!IMPORTANT]
+> Content and tooling published here are intended for **authorized security testing, controlled lab environments, CTFs, education, and defensive research**.
 
 ---
 
-## Contribution Space
+## Contribution Ops
 
 <div align="center">
 
 <img src="./game.gif" alt="clone4truth GitHub contribution space shooter" width="100%" />
 
-<sub>Generated automatically from my GitHub contribution graph.</sub>
+<sub>Automatically generated from the GitHub contribution graph.</sub>
 
 </div>
