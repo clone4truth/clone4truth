@@ -12,19 +12,9 @@
 
 ---
 
-```console
-$ whoami
-C4T / clone4truth
-
-$ cat mission.txt
-Break assumptions. Test defenses. Build better systems.
-
-$ cat scope.txt
-Red Teaming | Web & API Security | Adversary Emulation | Security Automation
-
-$ echo $ENGAGEMENT_MODE
-authorized-research / lab / CTF
-```
+<div align="center">
+  <img src="./assets/terminal.svg" alt="Animated Linux terminal showing clone4truth red team profile" width="100%" />
+</div>
 
 ## Offensive Security Focus
 
