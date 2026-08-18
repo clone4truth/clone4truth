@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+<p align="center">
+  <img src="./game.gif" alt="GitHub Space Shooter" width="100%" />
+</p>
+
 <!--
 **clone4truth/clone4truth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
