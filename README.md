@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/c4t-logo.webp" alt="C4T — Clone For Truth" width="320" />
+<img src="https://raw.githubusercontent.com/clone4truth/clone4truth/main/assets/c4t-logo.webp" alt="C4T — Clone For Truth" width="320" />
 
 <br />
 
