@@ -1,6 +1,8 @@
 <div align="center">
 
-# C4T (Clone For Truth)
+<img src="./assets/c4t-logo.webp" alt="C4T — Clone For Truth" width="320" />
+
+<br />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2400&pause=900&color=FF4D4D&center=true&vCenter=true&width=760&lines=Red+Team+%26+Offensive+Security;Adversary+Emulation+%26+Security+Research;Web+%2F+API+Security+%26+Automation" alt="Red Team typing banner" />
 
